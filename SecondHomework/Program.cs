@@ -19,33 +19,33 @@ namespace SecondHomework
                 Console.Clear();
                 switch (choice)
                 {
-//***********************************************************************************
-                    case 1:                                         
-                        Random rnd = new Random();                  
-                        int[] arr = new int[3];                     
-                        for (int i = 0; i < arr.Length; i++)        
-                        {                                           
-                            arr[i] = rnd.Next(10);                  
-                            Console.Write(arr[i] + "  ");           
-                        }                                           
-                        break;                                      
-//************************************************************************************
-                    case 2:                                                             
-                        const int NUMB1 = 5, NUMB2 = 10, NUMB3 = 21;                    
-                        Console.Write(NUMB1 + "\n" + NUMB2 + "\n" + NUMB3);             
+                    //***********************************************************************************
+                    case 1:
+                        Random rnd = new Random();
+                        int[] arr = new int[3];
+                        for (int i = 0; i < arr.Length; i++)
+                        {
+                            arr[i] = rnd.Next(10);
+                            Console.Write(arr[i] + "  ");
+                        }
                         break;
-//************************************************************************************
+                    //************************************************************************************
+                    case 2:
+                        const int NUMB1 = 5, NUMB2 = 10, NUMB3 = 21;
+                        Console.Write(NUMB1 + "\n" + NUMB2 + "\n" + NUMB3);
+                        break;
+                    //************************************************************************************
                     case 3:
                         Console.Write("Введите расстояние в сантиметрах: ");
                         int distance = int.Parse(Console.ReadLine());
                         Console.Write("Это эквивалентно - " + distance / 100 + " м");
                         break;
-//************************************************************************************
+                    //************************************************************************************
                     case 4:
                         int pastDays = 234, daysInWeek = 7;
                         Console.Write("Прошло " + pastDays + " дня\nПрошло полных недель - " + (pastDays / daysInWeek));
                         break;
-//************************************************************************************
+                    //************************************************************************************
                     case 5:
                         Random rand = new Random();
                         int firstNumb, secondNumb, count = 0;
@@ -59,16 +59,16 @@ namespace SecondHomework
                             "\nСумма его цифр - " + (firstNumb + secondNumb) +
                             "\nПроизведение его цифр - " + (firstNumb * secondNumb));
                         break;
-//************************************************************************************
+                    //************************************************************************************
                     case 6:
                         bool A = true, B = false, C = false;
 
                         Console.WriteLine("A = true, B = false, C = false\n");
-                        Console.WriteLine("A или B - " + (A || B ? A : B));
-                        Console.WriteLine("A и B - " + (A && B ? A : B));
-                        Console.WriteLine("B или C - " + (B || C ? B : C));
+                        Console.WriteLine("A или B - " + (A || B));
+                        Console.WriteLine("A и B - " + (A && B));
+                        Console.WriteLine("B или C - " + (B || C));
                         break;
-//************************************************************************************
+                    //************************************************************************************
                     case 7:
                         const double PI = 3.14;
                         double circleArea, squareArea;
@@ -84,7 +84,7 @@ namespace SecondHomework
                         Console.Write(circleArea > squareArea ?
                             "\nУ круга площадь больше чем у квадрата" : "\nУ квадрата площадь больше чем у круга");
                         break;
-//************************************************************************************
+                    //************************************************************************************
                     case 8:
                         Console.Write("Введите объем 1-тела: "); int amount = int.Parse(Console.ReadLine());
                         Console.Write("Введите массу 1-тела: "); int mass = int.Parse(Console.ReadLine());
@@ -97,7 +97,7 @@ namespace SecondHomework
                         Console.Write(densityOfMaterial > densityOfMaterial_2 ?
                             "\nПлотность 1-тела больше чем у 2-тела" : "\nПлотность 2-тела больше чем у 1-тела");
                         break;
-//************************************************************************************
+                    //************************************************************************************
                     case 9:
                         Console.Write("Введите значение напряжения эл. цепи № 1: "); int voltage = int.Parse(Console.ReadLine());
                         Console.Write("Введите значение сопротивления эл. цепи № 1: "); int resistance = int.Parse(Console.ReadLine());
@@ -110,7 +110,7 @@ namespace SecondHomework
                         Console.Write(current < current_2 ?
                             "\nПо первому участку протекает меньший ток" : "\nПо второму участку протекает меньший ток");
                         break;
-//************************************************************************************
+                    //************************************************************************************
                     case 10:
                         int numb = 20, numb2 = 35, numb3 = 10, numb4 = 50;
                         int a, b;
@@ -154,7 +154,7 @@ namespace SecondHomework
                             Console.Write(Math.Pow(i, 3));
                         }
                         break;
-//************************************************************************************
+                    //************************************************************************************
                     default:
                         break;
                 }
